@@ -131,10 +131,6 @@ body {
   &-title, &-priem, &-grafik, &-phone {
     margin-top: 9px;
   }
-
-  &-phone {
-    // margin-right: -300px;
-  }
   
   &-priem {
     margin-right: 90px;
@@ -152,12 +148,10 @@ body {
 
   &-social {
     margin-right: 15px;
-    // transform: translateY(25%);
   }
 
   .button {
     margin-top: 10px;
-    // right: 0;
   }
   
 }
@@ -474,29 +468,29 @@ body {
     .contact-block {
       position: absolute;
       bottom: 55px;
-      left: 25px;
+      left: 60px;
     }
 
     .contact {
       display: flex;
       align-items: center;
-      max-width: 310px;
+      max-width: 290px;
       font-size: 14px;
       background-color: rgba($accent, 0.8);
-      border-top-left-radius: 30px;
-      border-bottom-left-radius: 30px;
       margin-bottom: 15px;
       position: relative;
-      img {
+      .img-contact {
         margin-right: 10px;
+        margin-left: -20px;
       }
 
-      .icons {
+      &-socials {
         content: "";
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 8px;
+        max-width: 120px;
+        right: 0;
       }
     }
   }
@@ -534,31 +528,34 @@ body {
 #thanks-page {   
 
   .section-thanks {
-    padding: 200px 0 0 0;
+    padding: 155px 0 0 0;
     background-image: url('../img/thanks-back.jpg');
     flex-grow: 1;
   
     &-content {
       display: flex;
-      justify-content: space-between;   
-      margin-left: 90px;      
+      justify-content: space-between;         
     }
     
     &-title {
-      font-size: 42px;
+      font-size: 36px;
+      font-family: Pacifico, serif;
       margin-bottom: 40px;
+      color: $yellow;
     }
 
     &-text {
-      font-size: 30px;
-      margin: 0 0 60px;
+      font-size: 24px;
+      margin: 0 0 75px;
+      color: #fff;
     }
   
     &-link {
       text-decoration: underline;
-      font-size: 18px;
+      font-size: 14px;
       display: inline-block;
       margin-bottom: 150px;
+      color: #fff;
     }
   }
 }
@@ -566,21 +563,22 @@ body {
 
 .modal {
   text-align: center;
+  background-color: #7fd2e3;
 
   &-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
 
   form {
     margin: 0 auto;
-    width: 300px;
+    width: 180px;
   }
 
   .form-info {
-    text-align: left;
-    letter-spacing: 0;
+    text-align: center;
+    font-weight: bold;
   }
 
   .input-div {
@@ -588,7 +586,93 @@ body {
   }
 
   .button {
-    width: 100%;
+    margin-bottom: 12px;
+    // width: 100%;
+  }
+}
+
+.more {
+  max-width: 945px;
+  // min-height: 650px;
+  position: relative;
+
+  &-1 {
+    background-image: url('../img/shengenskoi-back.jpg');
+  }
+
+  .header-content {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .header-title {
+    font-size: 12px;
+    letter-spacing: -1px;
+    margin-left: 25px;
+  }
+  .section-title {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .stran {
+    &-content {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-right: 40px;
+    }
+    &-spisok {
+      display: flex;
+      font-size: 14px;
+      font-weight: bold;
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .visa {
+    &-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      span {
+        color: $accent;
+      }
+    }
+    &-text {
+      font-size: 14px;
+      max-width: 320px;
+      margin-bottom: 10px;
+    }
+
+    &-bonus {
+      margin-top: 40px;
+      &-title {
+        font-size: 24px;
+        font-family: Pacifico, serif;
+        color: $yellow;
+        margin-bottom: 10px;
+        // transform: skewX(45deg);
+      }
+      
+    }
+  }
+
+  .form {
+    max-width: none;
+    background-color: rgba($accent, 0.5);
+    position: relative;
+    margin-left: -35px;
+    margin-right: -35px;
+
+    .button {
+      display: block;
+      margin: 0 0 0 auto;
+    }
   }
 }
 

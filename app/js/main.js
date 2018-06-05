@@ -6,7 +6,7 @@ $(document).ready(function () {
   var $header = $(".header");
   var $menu = $(".main-menu");
   var utms = parseGET();
-  var headerHeight = 99;
+  var headerHeight = 91;
   var $hamburger = $(".hamburger");
 
   if (utms && Object.keys(utms).length > 0) {
