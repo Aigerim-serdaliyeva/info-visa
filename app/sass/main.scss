@@ -113,9 +113,7 @@ body {
 
   &-content {
     display: flex;
-    // align-items: center;
     align-items: flex-start;
-    // justify-content: space-between;      
   }
 
   .logo {
@@ -144,16 +142,16 @@ body {
     display: flex;
     align-items: center;
     margin-right: 70px;
-  }
-
-  &-social {
-    margin-right: 15px;
-  }
+  }  
 
   .button {
     margin-top: 10px;
   }
   
+}
+
+.social {
+  margin-right: 15px;
 }
 
 .footer {
@@ -456,20 +454,20 @@ body {
       align-items: center;
       min-height: 240px;
       margin-bottom: 30px;
+
       &-title {
         font-weight: bold;
         margin-bottom: 10px;
       }
+
       &-text {
         font-size: 14px;
+        min-height: 63px;
       }
     }
 
     .form {
       max-width: 940px;
-    }
-    .form-title {
-      text-align: center;
     }
   }
 
@@ -507,18 +505,17 @@ body {
       background-color: rgba($accent, 0.8);
       margin-bottom: 15px;
       position: relative;
-      .img-contact {
+
+      &-img {
         margin-right: 10px;
         margin-left: -20px;
       }
 
-      &-socials {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 120px;
-        right: 0;
+      &-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
     }
   }
