@@ -215,3 +215,64 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
   }
 }
+
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  height: 25px;
+  line-height: 20px;
+  text-align: left;
+
+ [type="checkbox"], [type="radio"] {
+   display: none;
+
+   & + span {
+     cursor: pointer;
+     white-space: nowrap;
+
+     &:before, &:after {
+       content: '';
+       position: absolute;
+     }
+
+     &:before {
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid $yellow;
+     }
+
+     &:after {
+      display: none;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 8px;
+      width: 10px;
+      height: 10px;
+      background-image: url('../img/ellips-blue.png');
+     }
+   }
+   &:checked + span:after {
+        display: block;
+   }
+ }
+ 
+ &_accent {
+  [type="checkbox"], [type="radio"] {
+     & + span {
+        &:before {
+           border-color: $accent;
+        }
+
+        &:after {
+           background-image: url('../img/check-accent.png');
+        }
+     }
+  }
+}
+}
+

@@ -158,6 +158,12 @@ $(document).ready(function () {
     },
   });
 
+  $(".perehod").click(function() {
+    var $show = $("#" + $(this).data("show"));
+    var $hide = $("#" + $(this).data("hide"));
+    $hide.removeClass("show");
+    $show.addClass("show");
+ });  
 
 });
 
