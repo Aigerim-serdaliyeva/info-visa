@@ -221,7 +221,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  // text-align: center;
 
   &-title {
     font-size: 36px;
@@ -257,6 +256,16 @@ body {
           width: 476px;
           height: 36px;
           background-image: url('../img/title-back-long.png');
+        }
+      }
+    }
+
+    &--short {
+      span {
+        &:before {
+          width: 91px;
+          height: 36px;
+          background-image: url('../img/title-back-short.png');
         }
       }
     }
@@ -587,17 +596,43 @@ body {
 
   .button {
     margin-bottom: 12px;
-    // width: 100%;
   }
 }
 
 .more {
   max-width: 945px;
-  // min-height: 650px;
   position: relative;
 
   &-1 {
     background-image: url('../img/shengenskoi-back.jpg');
+  }
+
+  &-2 {
+    background-image: url('../img/usa-back.jpg');
+  }
+
+  &-3 {
+    background-image: url('../img/canada-back.jpg');
+  }
+
+  &-4 {
+    background-image: url('../img/velikobritanya-back.jpg');
+  }
+
+  &-5 {
+    background-image: url('../img/bolgarya-back.jpg');
+  }
+
+  &-6 {
+    background-image: url('../img/irlandiya-back.jpg');
+  }
+
+  &-7 {
+    background-image: url('../img/bagamy-back.jpg');
+  }
+
+  &-8 {
+    background-image: url('../img/drugie-back.jpg');
   }
 
   .header-content {
@@ -611,8 +646,9 @@ body {
     margin-left: 25px;
   }
   .section-title {
-    padding: 0;
+    padding: 10px 0;
     margin-bottom: 30px;
+    margin-top: -20px;
   }
 
   .stran {
@@ -669,9 +705,26 @@ body {
     margin-left: -35px;
     margin-right: -35px;
 
+    form {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    &-bottom {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .input-div {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
     .button {
       display: block;
       margin: 0 0 0 auto;
+      font-size: 16px;
     }
   }
 }
