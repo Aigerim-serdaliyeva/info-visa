@@ -658,7 +658,7 @@ body {
       margin-bottom: 30px;
     }
     img {
-      margin-right: 40px;
+      margin-right: 50px;
     }
     &-spisok {
       display: flex;
@@ -671,6 +671,7 @@ body {
   }
 
   .visa {
+    max-width: 450px;
     &-title {
       font-size: 16px;
       font-weight: bold;
