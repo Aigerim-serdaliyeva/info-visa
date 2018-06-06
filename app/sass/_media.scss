@@ -7,6 +7,14 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
+  .section {
+    &-vyzov {
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width : 991px) {	
@@ -16,7 +24,10 @@
   }    
 
   .header {
-    padding: 5px 0;
+    // padding: 5px 0;
+    &-grafik {
+      display: none;
+    }
   }
 
   .footer {
@@ -61,7 +72,70 @@
     
 
   .section {
-    
+    &-title {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+
+    &-main {
+      &-title {
+        font-size: 36px;
+        &-2 {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &-stran {
+      .stran {
+        width: 48%;
+        align-items: flex-start;
+        img {
+          margin: 0 auto 20px;
+        }
+        &-title {
+          margin: 0 auto 15px;
+        }
+        .button {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &-why {
+      &-content-1, &-content-2 {
+        display: none;
+      }
+
+      .carousel-why {
+        display: block;
+      }
+      .why {
+        margin-bottom: 20px;
+        padding: 20px 0 0 20px;
+        &::before {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .form {
+        margin-top: 20px;
+      }
+    }
+
+    &-vyzov {
+      .section-title {
+        font-size: 22px;
+      }
+      .section-slogan {
+        margin-bottom: 20px;
+      }
+      &-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   #quiz-page {
@@ -111,6 +185,12 @@
 @media only screen and (max-width : 767px) {
 
   .form {
+    &-title {
+      &--left {
+        text-align: center;
+      }
+    }
+
     form {
       flex-direction: column;
       max-width: 500px;
@@ -137,11 +217,68 @@
   .section {
     &-title {
       font-size: 24px;
+      padding: 0;
+      margin-bottom: 10px;
+      background-image: none;
+      span {
+        &::before {
+          background-image: none;
+        }
+      }
+      &--long {
+        // background-image: none;
+        span {
+          &::before {
+            background-image: none;
+          }
+        }
+      }
+    }
+
+    &-slogan {
+      font-size: 30px;
     }
 
     &-main {
-      
-    }    
+      padding-top: 110px;
+
+      &-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+        &-2 {
+          margin-bottom: 20px;
+        }
+      }
+
+      .main-block {
+        max-width: none;
+        padding: 20px;
+        
+        &::before {
+          display: none;
+        }
+      }
+    }  
+    
+    &-services {
+      .section-slogan {
+        margin-bottom: 30px;
+      }
+      &-content {
+        flex-wrap: wrap;
+      }
+      .service {
+        max-width: none;
+        width: 48%;
+      }
+    }
+
+    &-vyzov {
+      &-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .more {
@@ -217,6 +354,57 @@
   }
 
   .section {
+
+    &-main {
+      &-title {
+        font-size: 22px;
+        &-1 {
+          font-size: 16px;
+        }
+      }
+      .main-block {
+        margin: 0 -15px;
+        &-title {
+          font-size: 15px;
+          text-align: center;
+        }
+        .button {
+          width: 100%;
+          white-space: normal;
+        }
+      }
+    }
+
+    &-stran {
+     
+    }
+
+    &-services {
+      .service {
+        width: 100%;
+        img {
+          margin-bottom: 15px;
+        }
+        .grow {
+          display: none;
+        }
+        &-text {
+          min-height: auto;
+          margin-bottom: 10px;
+        }
+        .button {
+          width: 100%;
+        }
+      }
+    }
+
+    &-contact {
+      .contact-block {
+        position: static;
+        margin: 15px auto 0 25px;
+        // position: relative;
+      }
+    }
 
   }
 

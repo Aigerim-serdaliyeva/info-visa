@@ -155,8 +155,24 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false },
       480: { items: 2, mouseDrag: true },
+      767: { items: 3, mouseDrag: true },
     },
   });
+
+  $(".carousel-why").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      480: { items: 2, mouseDrag: true },
+    },
+  });
+
+  
 
   $(".perehod").click(function() {
     var $show = $("#" + $(this).data("show"));

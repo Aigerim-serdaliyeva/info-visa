@@ -348,6 +348,8 @@ body {
       width: 24%;
       text-align: center;
       margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
       img {
         margin-bottom: 22px;
       }
@@ -405,6 +407,10 @@ body {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    .carousel-why {
+      display: none;
     }
 
     &-content-1 {
