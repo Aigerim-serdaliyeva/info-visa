@@ -776,6 +776,13 @@ body {
       display: flex;
       font-size: 14px;
       font-weight: bold;
+      ul {
+        margin: 0;
+        padding-left: 0;
+        &:first-child {
+          margin-right: 60px;
+        }
+      }
       li {
         list-style: none;
       }
@@ -826,6 +833,10 @@ body {
     &-bottom {
       max-width: 650px;
       margin: 0 auto;
+    }
+
+    &-bottom-2 {
+      display: none;
     }
 
     .input-div {

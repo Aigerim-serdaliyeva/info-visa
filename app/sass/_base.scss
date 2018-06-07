@@ -223,8 +223,8 @@ h1, h2, h3, h4, h5, h6 {
 .checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  height: 25px;
+  padding-left: 25px;
+  height: 15px;
   line-height: 20px;
   text-align: left;
 
@@ -243,20 +243,20 @@ h1, h2, h3, h4, h5, h6 {
      &:before {
       top: 0;
       left: 0;
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       border: 3px solid $yellow;
      }
 
      &:after {
       display: none;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 8px;
+      top: 5.1px;
+      left: 5.1px;
       width: 10px;
       height: 10px;
-      background-image: url('../img/ellips-blue.png');
+      border-radius: 50%;
+      background-color: $accent;
      }
    }
    &:checked + span:after {
