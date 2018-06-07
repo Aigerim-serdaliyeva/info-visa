@@ -356,6 +356,14 @@
     padding: 20px;
   }
 
+  .modal {
+    .button {
+      &--long {
+        width: 100% !important;
+      }
+    }
+  }
+
   .remodal {
     .modal-title {
       font-size: 18px;
@@ -477,17 +485,6 @@
           width: 100%;
         }
       }
-
-      // .checkbox {
-      //   height: 18px;
-      //   line-height: 20px;
-
-      //   & + span {
-      //     &::after {
-      //       top: 10px;
-      //     }
-      //   }
-      // }
     }
   }
 }
