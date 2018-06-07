@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
   var $wnd = $(window);
@@ -14,6 +16,10 @@ $(document).ready(function () {
   } else {
     utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
   }
+
+  if ($wnd.width() > 479) {
+    new WOW().init();
+  } 
 
   if ($wnd.width() < 992) {
     headerHeight = 95;
@@ -146,16 +152,13 @@ $(document).ready(function () {
 
 
   $(".carousel-certificates").owlCarousel({
-    nav: true,
-    dots: false,
     loop: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false },
-      480: { items: 2, mouseDrag: true },
-      767: { items: 3, mouseDrag: true },
+      0: { items: 1, mouseDrag: false, nav: false, dots: true },
+      480: { items: 2, mouseDrag: true, nav: true, dots: false }
     },
   });
 

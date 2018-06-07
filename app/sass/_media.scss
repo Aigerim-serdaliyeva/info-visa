@@ -81,6 +81,24 @@
 			}
 		}
   }
+
+  .form--big {
+    form {
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .input-div, .button {
+      width: 100%;
+    }
+    .input-div {
+      margin-right: 0;
+    }
+    .form-info {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
     
 
   .section {
@@ -123,7 +141,7 @@
         display: block;
       }
       .why {
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
         padding: 20px 0 0 20px;
         &::before {
           left: 0px;
@@ -441,8 +459,14 @@
           margin-bottom: 10px;
         }
         .button {
-          width: 100%;
+          min-width: 180px;
         }
+      }
+    }
+
+    &-certificates {
+      .carousel-certificates {
+        padding: 0;
       }
     }
 

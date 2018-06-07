@@ -83,25 +83,35 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding: 13px 12px;
+  padding: 12px 12px;
   border-radius: 5px;
   border: none;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.45);
   font-size: 12px;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: normal;
   text-align: center;
   background-color:#56d3ed;
   color: #000 !important;
-  white-space: nowrap;
   cursor: pointer;
 
   &:hover {
     background-color: $accent;
   }    
 
+  &--dark {
+    background-color: $accent;
+    &:hover {
+      background-color:#56d3ed;
+    }
+  }
+
   &:active {
     top: 1px;
+  }
+
+  &--dark {
+    background-color: #00a6c8;
   }
 }
 
@@ -224,8 +234,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   padding-left: 25px;
-  height: 15px;
-  line-height: 20px;
   text-align: left;
 
  [type="checkbox"], [type="radio"] {
@@ -233,7 +241,6 @@ h1, h2, h3, h4, h5, h6 {
 
    & + span {
      cursor: pointer;
-     white-space: nowrap;
 
      &:before, &:after {
        content: '';
