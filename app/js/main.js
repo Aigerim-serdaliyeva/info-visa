@@ -8,7 +8,7 @@ $(document).ready(function () {
   var $header = $(".header");
   var $menu = $(".main-menu");
   var utms = parseGET();
-  var headerHeight = 95;
+  var headerHeight = 91;
   var $hamburger = $(".hamburger");
 
   if (utms && Object.keys(utms).length > 0) {
@@ -22,7 +22,7 @@ $(document).ready(function () {
   } 
 
   if ($wnd.width() < 992) {
-    headerHeight = 95;
+    headerHeight = 91;
   }
 
   if ($wnd.width() > 479) {
