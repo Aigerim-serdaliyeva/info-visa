@@ -753,24 +753,20 @@ body {
     font-weight: bold;
   }
 
-  form {
-    margin: 0 auto;
-    width: 180px;
-  }
-
   .form-info {
     text-align: center;
     font-weight: bold;
   }
 
   .input-div {
+    width: 180px;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 
   .button {
     margin-bottom: 12px;
     &--long {
-      // width: 180px;
       min-width: 180px;
     }
   }

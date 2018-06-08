@@ -57,7 +57,7 @@
     display: none;
     background-color: #fff;
     position: fixed;
-    top: 95px;
+    top: 91px;
     margin-top: 0;
     left: 0;
     right: 0;
@@ -83,7 +83,7 @@
   }
 
   .form--big {
-    form {
+    .form-content {
       flex-direction: column;
       max-width: 500px;
       margin: 0 auto;
@@ -227,7 +227,7 @@
       }
     }
 
-    form {
+    &-content {
       flex-direction: column;
       max-width: 500px;
       margin: 0 auto;
@@ -333,7 +333,8 @@
     }
     .form {
       &-bottom {
-        display: none;
+        max-width: 500px;
+        // display: none;
       }
       &-bottom-2 {
         display: block;
@@ -381,6 +382,9 @@
   }
 
   .modal {
+    .input-div {
+      width: 100%;
+    }
     .button {
       &--long {
         width: 100% !important;
