@@ -149,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     color: red;
     padding-left: 35px;
     margin-top: 5px;
+    font-size: 14px;
 	}
 
 	&::-webkit-input-placeholder {
@@ -184,11 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 800px;
   margin: 0 auto;
   background-color: #33b8d3;
-  padding: 25px 35px 25px 50px;
-
-  form {      
-    
-  }
+  padding: 25px 40px;
 
   &-content {
     display: flex;
@@ -213,19 +210,21 @@ h1, h2, h3, h4, h5, h6 {
 
   .input-div {
     margin-right: 20px;
+    flex-basis: 180px;
   }
 
   .input-div, .button {
     margin-bottom: 10px;
-  }
-
-  .button--right {
-    
+    flex-grow: 1;
   }
 
   &-info {
     font-size: 12px;
     font-weight: bold;
+
+    .form-bottom & {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -266,8 +265,11 @@ h1, h2, h3, h4, h5, h6 {
       background-color: $accent;
      }
    }
+   &:checked {
+     color: red;
+   }
    &:checked + span:after {
-        display: block;
+      display: block;
    }
  }
  

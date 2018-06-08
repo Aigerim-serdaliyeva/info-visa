@@ -90,6 +90,7 @@
     }
     .input-div, .button {
       width: 100%;
+      flex-basis: 0;
     }
     .input-div {
       margin-right: 0;
@@ -237,6 +238,7 @@
     }
     .input-div {
       margin-right: 0;
+      flex-basis: 0;
     }
     &-info {
       max-width: 500px;

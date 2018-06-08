@@ -2,9 +2,9 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "VPartners";
-$admin_email  = "info@vpartners.kz, client@marketing-time.kz";
-$server_mail = "<info@vpartners.kz>";
+$project_name = "Info Visa";
+$admin_email  = "info@infovisa.kz, client@marketing-time.kz";
+$server_mail = "<info@infovisa.kz>";
 $form_subject = "Заявка";
 
 
@@ -37,4 +37,9 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 
 mail($admin_email, adopt($form_subject), $message, $headers);
 
-header("Location: /thanks.html");
+if (isset($_POST['page']) && $_POST['page'] == 'quiz') {
+  header("Location: /quiz-thanks.html");
+} else {
+  header("Location: /thanks.html");
+}
+

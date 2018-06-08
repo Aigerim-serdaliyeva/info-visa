@@ -7,4 +7,5 @@ Allow: /*.png
 Allow: /js/*.js
 Allow: /img/*.jpg
 Allow: /img/*.png
-Host: http://vpartners.kz
+Disallow: /sitepro
+Host: http://infovisa.kz

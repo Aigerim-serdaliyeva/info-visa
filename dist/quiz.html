@@ -25,10 +25,13 @@
 
 <body id="quiz-page">
 
+  <form action="/mail.php" method="post">
+    <input type="hidden" name="page" value="quiz">
+
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a id="phone_number" href="tel:+" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+    <a id="phone_number" href="tel:+77789972630" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
 
     <header class="header">
       <div class="container">
@@ -48,9 +51,9 @@
 
           <div class="header-contacts">  
             <div class="header-socials hidden-xxs">     
-              <a href="" class="header-social"><img src="./img/whatsapp-icon.png" alt=""></a>
-              <a href="" class="header-social"><img src="./img/telegram-icon.png" alt=""></a>
-              <a href="" class="header-social"><img src="./img/viber-icon.png" alt=""></a>
+              <a href="whatsapp://send?phone=+77475550363" class="social"><img src="./img/whatsapp-icon.png" alt=""></a>
+              <a href="" class="social"><img src="./img/telegram-icon.png" alt=""></a>
+              <a href="" class="social"><img src="./img/viber-icon.png" alt=""></a>
     
               <a id="phone_number" href="tel:+77475550363" class="text-phone">+7 747 555-03-63 ,</a>
               <a id="phone_number" href="tel:++77273272730" class="text-phone">+7 (727) 327-27-30</a>
@@ -167,11 +170,11 @@
             </div>
             
             <input type="hidden" name="Вопрос2" value="Цель Вашей поездки">
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Туризм" checked><span>Туризм</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Учеба"><span>Учеба</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Поездка по приглашению родственников и друзей"><span>Поездка по приглашению родственников и друзей</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Лечебная"><span>Лечебная</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Другое"><span>Другое</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ2" value="Туризм" checked><span>Туризм</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ2" value="Учеба"><span>Учеба</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ2" value="Поездка по приглашению родственников и друзей"><span>Поездка по приглашению родственников и друзей</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ2" value="Лечебная"><span>Лечебная</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ2" value="Другое"><span>Другое</span></label>
 
             <a href="#" class="button arrow-right perehod" data-show="vopros4" data-hide="vopros3">Следующий вопрос</a>
           </div>          
@@ -194,8 +197,8 @@
             </div>
             
             <input type="hidden" name="Вопрос3" value="Являетесь ли Вы гражданином (-кой) РК?">
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Да" checked><span>Да</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Нет"><span>Нет</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ3" value="Да" checked><span>Да</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ3" value="Нет"><span>Нет</span></label>
             
             <a href="#" class="button arrow-right perehod" data-show="vopros5" data-hide="vopros4">Следующий вопрос</a>
           </div>          
@@ -218,8 +221,8 @@
             </div>
             
             <input type="hidden" name="Вопрос4" value="Сколько Вам лет?">
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Меньше 18 лет" checked><span>Меньше 18 лет</span></label>
-            <label class="checkbox"><input type="radio" name="Ответ1" value="Больше 18 лет"><span>Больше 18 лет</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ4" value="Меньше 18 лет" checked><span>Меньше 18 лет</span></label>
+            <label class="checkbox"><input type="radio" name="Ответ4" value="Больше 18 лет"><span>Больше 18 лет</span></label>
             
             <a href="#" class="button arrow-right perehod" data-show="vopros6" data-hide="vopros5">Узнать результат</a>
           </div>          
@@ -238,10 +241,9 @@
           Для того, чтобы получить результат теста, укажите контактные данные
         </div>
 
-        <div class="form">
+        <div class="form form--big">
           <div class="form-content">
 
-            <form action="/mail.php" method="post">
               <input type="hidden" name="info" value="Оставьте заявку, и наш специалист по дистанционному обслуживанию клиентов свяжется с Вами!">
               <div class="input-div">
                   <input type="text" class="input" name="name" placeholder="Имя">
@@ -255,36 +257,15 @@
                   <span class="error-message">Заполните это поле</span>
               </div>
 
-              <!-- <button class="button ajax-submit" type="submit" id="polu4it_spisok_dokumentov">Получить список документов</button> -->
-              <a href="#" class="button arrow-right perehod" data-show="vopros7" data-hide="vopros6" id="polu4it_spisok_dokumentov">Получить список документов</a> 
-            </form>
-
-            <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
+              <button class="button ajax-submit" type="submit" id="polu4it_spisok_dokumentov">Получить список документов</button>
           </div>
+
+          <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
+
         </div>   
         
       </div>
     </section>
-
-
-    <section class="section section-question" id="vopros7">
-      <div class="container">
-        
-        <img class="check-green" src="./img/check-green.png" alt="">
-
-        <div class="question-title question-title--center">
-            Поздравляем!
-        </div>
-
-        <div class="question-text-3">
-          Ваши результаты успешно приняты. 
-          В течение 5 минут на Вашу почту придет список необходимых документов. 
-          Ожидайте звонка нашего специалиста для консультации и анализа Вашей ситуации  
-        </div>
-        
-      </div>
-    </section>
-
 
     <footer class="footer inverse">
       <div class="container">
@@ -318,6 +299,9 @@
 
   </div>
 
+  </form>
+
+
   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
@@ -337,12 +321,13 @@
         <span class="error-message">Заполните это поле</span>
       </div>   
 
+      <button class="button ajax-submit" type="submit" id="polu4it_besplatnui_konsultasiu">Получить бесплатную консультацию</button>
+      <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
     </form>
-    <button class="button ajax-submit" type="submit" id="polu4it_besplatnui_konsultasiu">Получить бесплатную консультацию</button>
-    <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
+    
 
   </div>
-  
+
   <div class="remodal remodal-small modal" data-remodal-id="zvonok-obratnyi" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
@@ -361,9 +346,9 @@
         <span class="error-message">Заполните это поле</span>
       </div>   
 
+      <button class="button button--long ajax-submit" type="submit" id="zakazat_obratnyi">Заказать обратный звонок</button>
+      <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
     </form>
-    <button class="button ajax-submit" type="submit" id="zakazat_obratnyi">Заказать обратный звонок</button>
-    <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
 
   </div>
 
