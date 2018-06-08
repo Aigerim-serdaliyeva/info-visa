@@ -130,6 +130,14 @@
       }
     }
 
+    &-reviews {
+      .review {
+        &:nth-child(2) {
+          margin-left: 70px;
+        }
+      }
+    }
+
     &-why {
       &-content-1, &-content-2 {
         display: none;
@@ -439,8 +447,28 @@
       }
     }
 
-    &-stran {
-     
+    &-reviews {      
+      .reviews-carousel {
+        display: none;
+
+        &-mobile {
+          display: block;
+        }
+      }
+
+      .review {
+        flex-direction: column;
+        align-items: center;
+        margin: 90px 0 0 0 !important;
+
+        &-image {
+          margin: -70px auto 0;
+        }
+
+        &-author {
+          text-align: center;
+        }
+      }
     }
 
     &-services {

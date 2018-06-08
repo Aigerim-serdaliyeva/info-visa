@@ -175,7 +175,30 @@ $(document).ready(function () {
     },
   });
 
-  
+  $(".reviews-carousel").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: true,
+    items: 1,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { mouseDrag: false },
+      480: { mouseDrag: true },
+    },
+  });
+
+  $(".reviews-carousel-mobile").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: true,
+    items: 1,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    mouseDrag: false
+  });  
 
   $(".perehod").click(function() {
     var $show = $("#" + $(this).data("show"));

@@ -59,7 +59,6 @@
     &-dot {
       width: 16px;
       height: 16px;
-      background-color: $yellow;
       background: $accent !important;
       margin: 0 5px;
       border-radius: 50%;
@@ -67,8 +66,19 @@
       &.active {
         background: darken($accent, 15%) !important;
       } 
+
+      
     }
-	}
+  }
+  
+  &.yellow {
+    .owl-dot {
+      background: darken($yellow, 15%) !important;
+      &.active {
+        background: $yellow !important;
+      } 
+    }
+  }
 }
 
 .remodal {

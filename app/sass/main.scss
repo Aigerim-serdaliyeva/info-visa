@@ -410,6 +410,10 @@ body {
 
   &-reviews {
     background-image: url('../img/reviews-back.jpg');
+
+    .reviews-carousel-mobile {
+      display: none;
+    }
     
     .review {
       display: flex;
@@ -420,7 +424,7 @@ body {
       background-color: rgba($yellow, 0.6);
 
       &-image {
-        margin: 0 20px 0 -70px;
+        margin: 0 10px 0 -70px;
         width: 140px;
         height: 140px;
         flex-shrink: 0;
@@ -446,6 +450,11 @@ body {
       }
 
       &-content {
+        padding: 5px 10px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 200px;
       }
     }
   }
