@@ -33,6 +33,12 @@
     &-content {
       align-items: center;
     }
+    &-title {
+      margin-top: 0;
+    }
+    &-priem {
+      margin-top: 0;
+    }
     &-socials {
       display: none;
     }
@@ -57,7 +63,7 @@
     display: none;
     background-color: #fff;
     position: fixed;
-    top: 91px;
+    top: 94px;
     margin-top: 0;
     left: 0;
     right: 0;
@@ -90,7 +96,7 @@
     }
     .input-div, .button {
       width: 100%;
-      flex-basis: 0;
+      flex-basis: auto;
     }
     .input-div {
       margin-right: 0;
@@ -148,11 +154,15 @@
         display: block;
       }
       .why {
-        margin: 0 auto 20px;
+        font-size: 16px;
+        margin: 0 auto 0px;
         padding: 20px 0 0 20px;
+        &-title {
+          text-align: center;
+        }
         &::before {
-          left: 0px;
-          top: 0px;
+          left: 10px;
+          top: 10px;
         }
       }
 
@@ -238,7 +248,7 @@
     }
     .input-div {
       margin-right: 0;
-      flex-basis: 0;
+      flex-basis: auto;
     }
     &-info {
       max-width: 500px;
@@ -322,7 +332,8 @@
     }
   }
 
-  .more {    
+  .more {  
+    min-height: none;  
     .stran {
       &-content {
         flex-direction: column;
@@ -524,6 +535,10 @@
     }
     .section-title {
       margin-bottom: 15px;
+    }
+
+    &-1, &-2, &-3, &-4, &-5, &-6, &-7, &-8 {
+      background-image: none;
     }
   }
 
