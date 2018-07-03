@@ -1,9 +1,11 @@
 <?php
 
+if (isset($_POST['info'])) {
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 $project_name = "Info Visa";
-$admin_email  = "info@infovisa.kz, visa.info@bk.ru, client@marketing-time.kz";
+$admin_email  = "info@infovisa.kz, client@marketing-time.kz";
 $server_mail = "<info@infovisa.kz>";
 $form_subject = "Заявка";
 
@@ -43,3 +45,4 @@ if (isset($_POST['page']) && $_POST['page'] == 'quiz') {
   header("Location: /thanks.html");
 }
 
+}
